@@ -1,0 +1,151 @@
+ETLJobID,Source_ID,Target_ID,TransformationSQL,ExecutionTimestamp,ExecutionStatus,Metadata_Status,RowsProcessed,Latency
+JOB_000,N061,N049,INSERT INTO Risk_Cube SELECT SUM(exposure) FROM Murex_Trades GROUP BY counterparty,2026-02-28 11:15:15.862275,Success,Complete,789145,1.6827322160145444
+JOB_001,N037,N080,"INSERT INTO credit_exposure SELECT customer_id, SUM(balance) FROM loan_book GROUP BY customer_id",2026-03-04 06:04:15.862275,Success,Complete,647650,1.1681768316809855
+JOB_002,N094,N047,"SELECT counterparty, SUM(var) FROM market_positions GROUP BY counterparty",2026-03-05 08:20:15.862275,Timeout,Complete,179337,14.074798059431213
+JOB_003,N047,N091,"SELECT counterparty, SUM(var) FROM market_positions GROUP BY counterparty",2026-03-03 19:07:15.862275,Success,Complete,855499,16.459582294222255
+JOB_004,N035,N062,INSERT INTO Risk_Cube SELECT SUM(exposure) FROM Murex_Trades GROUP BY counterparty,2026-03-05 04:31:15.862275,Timeout,Complete,386431,9.787874761866773
+JOB_005,N055,N062,"SELECT counterparty, SUM(var) FROM market_positions GROUP BY counterparty",2026-03-03 10:11:15.862275,Success,Incomplete,644092,7.40134972521861
+JOB_006,N057,N058,"SELECT counterparty, SUM(var) FROM market_positions GROUP BY counterparty",2026-03-02 03:58:15.862275,Timeout,Complete,398114,18.097709981594395
+JOB_007,N037,N054,INSERT INTO Risk_Cube SELECT SUM(exposure) FROM Murex_Trades GROUP BY counterparty,2026-03-05 16:39:15.862275,Failure,Incomplete,330970,6.1245579035348365
+JOB_008,N069,N099,INSERT INTO Risk_Cube SELECT SUM(exposure) FROM Murex_Trades GROUP BY counterparty,2026-03-03 02:45:15.862275,Success,Complete,482124,11.763500579765273
+JOB_009,N060,N023,INSERT INTO Risk_Cube SELECT SUM(exposure) FROM Murex_Trades GROUP BY counterparty,2026-03-01 17:20:15.862275,Failure,Complete,923198,19.304196989453228
+JOB_010,N081,N063,"SELECT counterparty, SUM(var) FROM market_positions GROUP BY counterparty",2026-03-06 07:15:15.862275,Failure,Complete,317680,17.826406209999544
+JOB_011,N038,N087,"INSERT INTO credit_exposure SELECT customer_id, SUM(balance) FROM loan_book GROUP BY customer_id",2026-03-04 16:03:15.862275,Success,Incomplete,699055,0.48450548193670817
+JOB_012,N076,N080,"SELECT counterparty, SUM(var) FROM market_positions GROUP BY counterparty",2026-03-06 17:14:15.862275,Timeout,Incomplete,697790,14.302056935923693
+JOB_013,N085,N047,INSERT INTO Risk_Cube SELECT SUM(exposure) FROM Murex_Trades GROUP BY counterparty,2026-02-28 15:42:15.862275,Failure,Incomplete,932134,11.830900461062674
+JOB_014,N097,N047,"INSERT INTO credit_exposure SELECT customer_id, SUM(balance) FROM loan_book GROUP BY customer_id",2026-03-01 04:31:15.862275,Failure,Incomplete,331848,10.737831496030205
+JOB_015,N069,N027,"SELECT counterparty, SUM(var) FROM market_positions GROUP BY counterparty",2026-03-04 01:16:15.862275,Timeout,Complete,890286,14.902165313062062
+JOB_016,N016,N080,"SELECT portfolio, SUM(liquidity) FROM treasury_positions GROUP BY portfolio",2026-03-03 11:58:15.862275,Success,Complete,689868,12.704683263619327
+JOB_017,N021,N040,INSERT INTO Risk_Cube SELECT SUM(exposure) FROM Murex_Trades GROUP BY counterparty,2026-03-01 07:55:15.862275,Timeout,Incomplete,467206,3.637743928192162
+JOB_018,N056,N087,"SELECT portfolio, SUM(liquidity) FROM treasury_positions GROUP BY portfolio",2026-02-28 09:37:15.862275,Timeout,Complete,134070,6.151869221936099
+JOB_019,N098,N098,"SELECT counterparty, SUM(var) FROM market_positions GROUP BY counterparty",2026-03-02 09:33:15.862275,Timeout,Incomplete,395381,11.00970001366453
+JOB_020,N070,N035,"SELECT portfolio, SUM(liquidity) FROM treasury_positions GROUP BY portfolio",2026-03-04 23:24:15.862275,Timeout,Incomplete,756742,6.299961399874817
+JOB_021,N004,N089,"SELECT portfolio, SUM(liquidity) FROM treasury_positions GROUP BY portfolio",2026-03-01 20:05:15.862275,Failure,Complete,431287,3.443947911858789
+JOB_022,N002,N023,"INSERT INTO credit_exposure SELECT customer_id, SUM(balance) FROM loan_book GROUP BY customer_id",2026-03-06 18:23:15.862275,Failure,Complete,689251,6.26638528833334
+JOB_023,N097,N025,"SELECT counterparty, SUM(var) FROM market_positions GROUP BY counterparty",2026-03-02 07:54:15.862275,Failure,Incomplete,686459,7.387349229174736
+JOB_024,N001,N088,INSERT INTO Risk_Cube SELECT SUM(exposure) FROM Murex_Trades GROUP BY counterparty,2026-03-04 10:40:15.862275,Timeout,Complete,707518,5.352767506446273
+JOB_025,N009,N072,"INSERT INTO credit_exposure SELECT customer_id, SUM(balance) FROM loan_book GROUP BY customer_id",2026-03-06 03:34:15.862275,Success,Incomplete,268115,13.572339462314142
+JOB_026,N074,N033,"SELECT portfolio, SUM(liquidity) FROM treasury_positions GROUP BY portfolio",2026-02-28 05:18:15.862275,Success,Incomplete,466784,17.497062922846453
+JOB_027,N064,N021,"SELECT portfolio, SUM(liquidity) FROM treasury_positions GROUP BY portfolio",2026-03-05 21:39:15.862275,Failure,Incomplete,771834,2.9370106014170396
+JOB_028,N026,N098,"INSERT INTO credit_exposure SELECT customer_id, SUM(balance) FROM loan_book GROUP BY customer_id",2026-03-06 16:57:15.862275,Success,Incomplete,854881,9.914023155307373
+JOB_029,N063,N046,"INSERT INTO credit_exposure SELECT customer_id, SUM(balance) FROM loan_book GROUP BY customer_id",2026-02-28 20:37:15.862275,Timeout,Complete,807438,15.713874882644493
+JOB_030,N066,N010,INSERT INTO Risk_Cube SELECT SUM(exposure) FROM Murex_Trades GROUP BY counterparty,2026-03-06 03:59:15.862275,Success,Incomplete,748359,14.642704490203606
+JOB_031,N091,N060,"SELECT counterparty, SUM(var) FROM market_positions GROUP BY counterparty",2026-03-06 05:18:15.862275,Failure,Incomplete,437040,7.323872435608507
+JOB_032,N079,N020,INSERT INTO Risk_Cube SELECT SUM(exposure) FROM Murex_Trades GROUP BY counterparty,2026-03-01 05:23:15.862275,Failure,Incomplete,716999,13.289534146530634
+JOB_033,N094,N007,"INSERT INTO credit_exposure SELECT customer_id, SUM(balance) FROM loan_book GROUP BY customer_id",2026-02-28 02:25:15.862275,Timeout,Incomplete,244598,6.022361076774154
+JOB_034,N093,N099,"INSERT INTO credit_exposure SELECT customer_id, SUM(balance) FROM loan_book GROUP BY customer_id",2026-03-06 01:25:15.862275,Timeout,Incomplete,37424,13.3651111257697
+JOB_035,N066,N028,"SELECT counterparty, SUM(var) FROM market_positions GROUP BY counterparty",2026-02-28 11:47:15.862275,Timeout,Incomplete,532124,16.569838589141277
+JOB_036,N021,N054,"SELECT portfolio, SUM(liquidity) FROM treasury_positions GROUP BY portfolio",2026-02-28 18:20:15.862275,Failure,Incomplete,643872,12.17840790590927
+JOB_037,N059,N083,"SELECT counterparty, SUM(var) FROM market_positions GROUP BY counterparty",2026-03-03 17:34:15.862275,Failure,Complete,199080,10.764816686947464
+JOB_038,N039,N088,INSERT INTO Risk_Cube SELECT SUM(exposure) FROM Murex_Trades GROUP BY counterparty,2026-03-06 17:28:15.862275,Timeout,Incomplete,975068,17.818671242422074
+JOB_039,N092,N038,"SELECT portfolio, SUM(liquidity) FROM treasury_positions GROUP BY portfolio",2026-02-28 17:57:15.862275,Timeout,Incomplete,303328,13.990776612481469
+JOB_040,N063,N097,"SELECT counterparty, SUM(var) FROM market_positions GROUP BY counterparty",2026-03-01 03:31:15.862275,Success,Incomplete,751438,4.022505428941367
+JOB_041,N010,N072,"SELECT counterparty, SUM(var) FROM market_positions GROUP BY counterparty",2026-03-05 18:36:15.862275,Timeout,Incomplete,982654,17.811828376154534
+JOB_042,N051,N016,INSERT INTO Risk_Cube SELECT SUM(exposure) FROM Murex_Trades GROUP BY counterparty,2026-02-28 15:42:15.862275,Timeout,Complete,877749,4.1348584176245575
+JOB_043,N042,N093,"SELECT portfolio, SUM(liquidity) FROM treasury_positions GROUP BY portfolio",2026-03-02 05:28:15.862275,Success,Complete,215567,0.5796024436971186
+JOB_044,N038,N016,"SELECT portfolio, SUM(liquidity) FROM treasury_positions GROUP BY portfolio",2026-02-28 16:54:15.862275,Success,Complete,792163,9.581369051745746
+JOB_045,N060,N081,INSERT INTO Risk_Cube SELECT SUM(exposure) FROM Murex_Trades GROUP BY counterparty,2026-03-04 01:04:15.862275,Success,Complete,330423,15.812157923272581
+JOB_046,N016,N061,"SELECT portfolio, SUM(liquidity) FROM treasury_positions GROUP BY portfolio",2026-02-28 16:23:15.862275,Failure,Complete,85511,0.8675000660174897
+JOB_047,N089,N064,"SELECT portfolio, SUM(liquidity) FROM treasury_positions GROUP BY portfolio",2026-02-28 18:18:15.862275,Timeout,Incomplete,951113,7.963855633627535
+JOB_048,N044,N025,INSERT INTO Risk_Cube SELECT SUM(exposure) FROM Murex_Trades GROUP BY counterparty,2026-03-05 20:42:15.862275,Timeout,Complete,689727,7.358156521286014
+JOB_049,N055,N010,"SELECT counterparty, SUM(var) FROM market_positions GROUP BY counterparty",2026-03-01 08:06:15.862275,Timeout,Complete,402486,17.03752766777214
+JOB_050,N011,N093,INSERT INTO Risk_Cube SELECT SUM(exposure) FROM Murex_Trades GROUP BY counterparty,2026-02-28 11:44:15.862275,Failure,Complete,966770,0.9612802775386539
+JOB_051,N015,N028,"SELECT portfolio, SUM(liquidity) FROM treasury_positions GROUP BY portfolio",2026-03-03 21:19:15.862275,Success,Complete,23719,13.020775485023545
+JOB_052,N020,N064,INSERT INTO Risk_Cube SELECT SUM(exposure) FROM Murex_Trades GROUP BY counterparty,2026-03-02 07:20:15.862275,Success,Complete,313934,6.86512523591535
+JOB_053,N077,N029,"SELECT portfolio, SUM(liquidity) FROM treasury_positions GROUP BY portfolio",2026-03-01 07:17:15.862275,Success,Complete,94127,15.47400814710117
+JOB_054,N050,N015,INSERT INTO Risk_Cube SELECT SUM(exposure) FROM Murex_Trades GROUP BY counterparty,2026-03-05 02:49:15.862275,Timeout,Complete,107726,14.441451668838997
+JOB_055,N012,N039,INSERT INTO Risk_Cube SELECT SUM(exposure) FROM Murex_Trades GROUP BY counterparty,2026-03-05 01:12:15.862275,Timeout,Complete,753966,5.151005828942879
+JOB_056,N048,N012,"SELECT counterparty, SUM(var) FROM market_positions GROUP BY counterparty",2026-03-03 11:13:15.862275,Failure,Incomplete,717210,3.7548460138201456
+JOB_057,N040,N002,"SELECT portfolio, SUM(liquidity) FROM treasury_positions GROUP BY portfolio",2026-03-05 12:23:15.862275,Failure,Complete,909277,14.335593593663427
+JOB_058,N066,N072,INSERT INTO Risk_Cube SELECT SUM(exposure) FROM Murex_Trades GROUP BY counterparty,2026-02-28 14:56:15.862275,Success,Incomplete,767623,4.246147426917607
+JOB_059,N079,N096,"SELECT counterparty, SUM(var) FROM market_positions GROUP BY counterparty",2026-03-02 04:32:15.862275,Success,Complete,967251,2.7279893134355317
+JOB_060,N012,N026,INSERT INTO Risk_Cube SELECT SUM(exposure) FROM Murex_Trades GROUP BY counterparty,2026-03-04 02:04:15.862275,Failure,Complete,372052,8.10187076317575
+JOB_061,N066,N088,"SELECT portfolio, SUM(liquidity) FROM treasury_positions GROUP BY portfolio",2026-03-03 18:42:15.862275,Failure,Incomplete,485406,6.543119756296893
+JOB_062,N098,N091,"SELECT counterparty, SUM(var) FROM market_positions GROUP BY counterparty",2026-03-05 15:30:15.862275,Failure,Incomplete,158012,5.037804023089791
+JOB_063,N042,N037,INSERT INTO Risk_Cube SELECT SUM(exposure) FROM Murex_Trades GROUP BY counterparty,2026-03-05 08:55:15.862275,Failure,Incomplete,70676,4.883926201655318
+JOB_064,N059,N056,INSERT INTO Risk_Cube SELECT SUM(exposure) FROM Murex_Trades GROUP BY counterparty,2026-03-02 13:56:15.862275,Success,Incomplete,65794,5.034990208634586
+JOB_065,N092,N034,"SELECT counterparty, SUM(var) FROM market_positions GROUP BY counterparty",2026-03-01 05:15:15.862275,Timeout,Complete,84744,4.75293078835022
+JOB_066,N045,N043,"SELECT counterparty, SUM(var) FROM market_positions GROUP BY counterparty",2026-03-01 12:51:15.862275,Success,Complete,609911,8.518435641130495
+JOB_067,N023,N031,"SELECT portfolio, SUM(liquidity) FROM treasury_positions GROUP BY portfolio",2026-03-06 14:15:15.862275,Timeout,Complete,261925,16.411046194376073
+JOB_068,N063,N023,"SELECT counterparty, SUM(var) FROM market_positions GROUP BY counterparty",2026-03-05 17:01:15.862275,Success,Incomplete,202665,11.450817998379282
+JOB_069,N042,N066,INSERT INTO Risk_Cube SELECT SUM(exposure) FROM Murex_Trades GROUP BY counterparty,2026-03-03 11:19:15.862275,Failure,Complete,673288,16.584349659569828
+JOB_070,N007,N049,INSERT INTO Risk_Cube SELECT SUM(exposure) FROM Murex_Trades GROUP BY counterparty,2026-03-04 19:02:15.862275,Success,Incomplete,941364,14.623867439545768
+JOB_071,N091,N084,INSERT INTO Risk_Cube SELECT SUM(exposure) FROM Murex_Trades GROUP BY counterparty,2026-03-03 11:03:15.862275,Success,Incomplete,498818,17.744106826430304
+JOB_072,N019,N025,"SELECT counterparty, SUM(var) FROM market_positions GROUP BY counterparty",2026-03-06 13:39:15.862275,Failure,Incomplete,423198,2.5293437316202176
+JOB_073,N022,N066,"SELECT counterparty, SUM(var) FROM market_positions GROUP BY counterparty",2026-03-05 13:24:15.862275,Timeout,Incomplete,838163,4.845760709827533
+JOB_074,N034,N000,"SELECT counterparty, SUM(var) FROM market_positions GROUP BY counterparty",2026-03-05 19:29:15.862275,Timeout,Incomplete,736949,8.667177821982637
+JOB_075,N042,N029,INSERT INTO Risk_Cube SELECT SUM(exposure) FROM Murex_Trades GROUP BY counterparty,2026-03-01 23:26:15.862275,Failure,Incomplete,732497,11.954392158028067
+JOB_076,N087,N096,"SELECT counterparty, SUM(var) FROM market_positions GROUP BY counterparty",2026-02-28 22:02:15.862275,Failure,Complete,31281,17.424528945274584
+JOB_077,N035,N077,"SELECT counterparty, SUM(var) FROM market_positions GROUP BY counterparty",2026-02-28 02:40:15.862275,Timeout,Incomplete,172014,5.638391110623216
+JOB_078,N051,N081,"SELECT counterparty, SUM(var) FROM market_positions GROUP BY counterparty",2026-03-04 04:37:15.862275,Timeout,Incomplete,926018,2.650296419886024
+JOB_079,N052,N002,"SELECT counterparty, SUM(var) FROM market_positions GROUP BY counterparty",2026-03-03 09:11:15.862275,Failure,Incomplete,950179,4.050869848996526
+JOB_080,N093,N053,"INSERT INTO credit_exposure SELECT customer_id, SUM(balance) FROM loan_book GROUP BY customer_id",2026-03-02 22:08:15.862275,Success,Incomplete,883780,13.307218839353498
+JOB_081,N072,N051,"SELECT portfolio, SUM(liquidity) FROM treasury_positions GROUP BY portfolio",2026-02-27 23:58:15.862275,Failure,Incomplete,32249,8.160515193078346
+JOB_082,N094,N091,"SELECT counterparty, SUM(var) FROM market_positions GROUP BY counterparty",2026-03-04 19:00:15.862275,Timeout,Complete,894123,7.766934174620789
+JOB_083,N062,N052,INSERT INTO Risk_Cube SELECT SUM(exposure) FROM Murex_Trades GROUP BY counterparty,2026-03-03 07:33:15.862275,Timeout,Complete,425755,15.260734783434334
+JOB_084,N086,N069,"INSERT INTO credit_exposure SELECT customer_id, SUM(balance) FROM loan_book GROUP BY customer_id",2026-03-06 16:21:15.862275,Timeout,Complete,621808,13.72257044983555
+JOB_085,N071,N070,"INSERT INTO credit_exposure SELECT customer_id, SUM(balance) FROM loan_book GROUP BY customer_id",2026-03-04 15:46:15.862275,Success,Complete,374805,1.9437911077439536
+JOB_086,N085,N047,"INSERT INTO credit_exposure SELECT customer_id, SUM(balance) FROM loan_book GROUP BY customer_id",2026-03-02 08:58:15.862275,Success,Incomplete,976433,11.82555424985041
+JOB_087,N051,N011,"SELECT portfolio, SUM(liquidity) FROM treasury_positions GROUP BY portfolio",2026-02-28 00:19:15.862275,Failure,Incomplete,761178,0.47178619980538716
+JOB_088,N010,N063,"SELECT counterparty, SUM(var) FROM market_positions GROUP BY counterparty",2026-03-01 20:18:15.862275,Timeout,Complete,109627,14.416342812879845
+JOB_089,N020,N006,"SELECT portfolio, SUM(liquidity) FROM treasury_positions GROUP BY portfolio",2026-03-02 02:52:15.862275,Timeout,Incomplete,938554,17.687775845227602
+JOB_090,N088,N051,INSERT INTO Risk_Cube SELECT SUM(exposure) FROM Murex_Trades GROUP BY counterparty,2026-03-05 12:39:15.862275,Failure,Complete,576817,18.932787731317195
+JOB_091,N016,N087,"INSERT INTO credit_exposure SELECT customer_id, SUM(balance) FROM loan_book GROUP BY customer_id",2026-03-01 21:26:15.862275,Timeout,Incomplete,668131,2.7749803466635234
+JOB_092,N042,N079,"INSERT INTO credit_exposure SELECT customer_id, SUM(balance) FROM loan_book GROUP BY customer_id",2026-03-04 13:48:15.862275,Failure,Incomplete,662268,7.768709934177958
+JOB_093,N012,N094,"SELECT portfolio, SUM(liquidity) FROM treasury_positions GROUP BY portfolio",2026-03-03 03:21:15.862275,Failure,Incomplete,273753,9.859393744293737
+JOB_094,N053,N029,"SELECT counterparty, SUM(var) FROM market_positions GROUP BY counterparty",2026-03-04 13:18:15.862275,Success,Incomplete,869249,17.019980972486415
+JOB_095,N012,N017,"INSERT INTO credit_exposure SELECT customer_id, SUM(balance) FROM loan_book GROUP BY customer_id",2026-03-01 08:36:15.862275,Success,Incomplete,414664,13.297657813090924
+JOB_096,N073,N037,"SELECT counterparty, SUM(var) FROM market_positions GROUP BY counterparty",2026-03-02 12:54:15.862275,Failure,Complete,853972,17.115695517795906
+JOB_097,N089,N029,INSERT INTO Risk_Cube SELECT SUM(exposure) FROM Murex_Trades GROUP BY counterparty,2026-03-04 01:28:15.862275,Success,Incomplete,571419,15.636073554052738
+JOB_098,N054,N013,"SELECT counterparty, SUM(var) FROM market_positions GROUP BY counterparty",2026-02-28 02:03:15.862275,Timeout,Incomplete,714390,4.201977116180873
+JOB_099,N048,N027,"SELECT portfolio, SUM(liquidity) FROM treasury_positions GROUP BY portfolio",2026-03-03 21:16:15.862275,Timeout,Complete,619317,0.372132200321995
+JOB_100,N081,N026,"SELECT portfolio, SUM(liquidity) FROM treasury_positions GROUP BY portfolio",2026-02-28 19:55:15.862275,Success,Complete,274529,15.55751162906992
+JOB_101,N043,N078,"INSERT INTO credit_exposure SELECT customer_id, SUM(balance) FROM loan_book GROUP BY customer_id",2026-03-05 12:19:15.862275,Timeout,Incomplete,801908,17.81027046215401
+JOB_102,N006,N073,"SELECT counterparty, SUM(var) FROM market_positions GROUP BY counterparty",2026-03-03 08:23:15.862275,Success,Incomplete,944904,18.082551874186247
+JOB_103,N091,N026,"INSERT INTO credit_exposure SELECT customer_id, SUM(balance) FROM loan_book GROUP BY customer_id",2026-03-05 20:12:15.862275,Timeout,Complete,583575,13.380685145745868
+JOB_104,N016,N020,INSERT INTO Risk_Cube SELECT SUM(exposure) FROM Murex_Trades GROUP BY counterparty,2026-03-04 20:18:15.862275,Timeout,Complete,253284,7.721029485861464
+JOB_105,N077,N005,INSERT INTO Risk_Cube SELECT SUM(exposure) FROM Murex_Trades GROUP BY counterparty,2026-03-06 02:05:15.862275,Timeout,Complete,428706,13.605884770667512
+JOB_106,N007,N027,INSERT INTO Risk_Cube SELECT SUM(exposure) FROM Murex_Trades GROUP BY counterparty,2026-03-02 11:46:15.862275,Success,Complete,969856,3.1088290158036074
+JOB_107,N073,N050,"SELECT counterparty, SUM(var) FROM market_positions GROUP BY counterparty",2026-03-05 14:50:15.862275,Success,Complete,892745,11.527529244119817
+JOB_108,N051,N048,"SELECT portfolio, SUM(liquidity) FROM treasury_positions GROUP BY portfolio",2026-03-01 21:35:15.862275,Failure,Complete,273732,2.1439171252489784
+JOB_109,N093,N063,"INSERT INTO credit_exposure SELECT customer_id, SUM(balance) FROM loan_book GROUP BY customer_id",2026-03-05 19:29:15.862275,Timeout,Incomplete,437553,0.3158886651390489
+JOB_110,N084,N063,"INSERT INTO credit_exposure SELECT customer_id, SUM(balance) FROM loan_book GROUP BY customer_id",2026-02-28 10:39:15.862275,Timeout,Complete,46583,6.522778421674106
+JOB_111,N021,N075,"SELECT counterparty, SUM(var) FROM market_positions GROUP BY counterparty",2026-03-05 13:33:15.862275,Failure,Incomplete,196280,5.453914211887762
+JOB_112,N090,N031,INSERT INTO Risk_Cube SELECT SUM(exposure) FROM Murex_Trades GROUP BY counterparty,2026-03-02 10:56:15.862275,Failure,Incomplete,921534,13.808408073564687
+JOB_113,N061,N018,"SELECT portfolio, SUM(liquidity) FROM treasury_positions GROUP BY portfolio",2026-03-05 12:09:15.862275,Failure,Incomplete,380675,4.416999974197473
+JOB_114,N043,N058,INSERT INTO Risk_Cube SELECT SUM(exposure) FROM Murex_Trades GROUP BY counterparty,2026-03-03 16:31:15.862275,Success,Complete,180791,5.016659209288935
+JOB_115,N015,N091,INSERT INTO Risk_Cube SELECT SUM(exposure) FROM Murex_Trades GROUP BY counterparty,2026-02-27 22:19:15.862275,Success,Incomplete,241677,9.401568959524809
+JOB_116,N075,N070,"SELECT portfolio, SUM(liquidity) FROM treasury_positions GROUP BY portfolio",2026-03-02 13:10:15.862275,Timeout,Incomplete,542958,2.4239868003430787
+JOB_117,N032,N055,"SELECT counterparty, SUM(var) FROM market_positions GROUP BY counterparty",2026-02-28 23:01:15.862275,Timeout,Complete,506271,7.9055837891939085
+JOB_118,N063,N083,"INSERT INTO credit_exposure SELECT customer_id, SUM(balance) FROM loan_book GROUP BY customer_id",2026-03-06 14:40:15.862275,Success,Incomplete,753405,12.2245619082933
+JOB_119,N083,N029,"INSERT INTO credit_exposure SELECT customer_id, SUM(balance) FROM loan_book GROUP BY customer_id",2026-03-04 10:07:15.862275,Failure,Incomplete,497855,3.0511290093435295
+JOB_120,N050,N093,"SELECT counterparty, SUM(var) FROM market_positions GROUP BY counterparty",2026-03-06 15:54:15.862275,Failure,Incomplete,61642,11.112289977903348
+JOB_121,N031,N024,"SELECT portfolio, SUM(liquidity) FROM treasury_positions GROUP BY portfolio",2026-02-28 21:23:15.862275,Timeout,Incomplete,830732,19.62797317441689
+JOB_122,N069,N008,"SELECT portfolio, SUM(liquidity) FROM treasury_positions GROUP BY portfolio",2026-02-28 22:04:15.862275,Failure,Complete,205273,18.813392382071513
+JOB_123,N080,N088,INSERT INTO Risk_Cube SELECT SUM(exposure) FROM Murex_Trades GROUP BY counterparty,2026-03-02 15:50:15.862275,Timeout,Incomplete,376187,14.587076938986531
+JOB_124,N082,N064,"INSERT INTO credit_exposure SELECT customer_id, SUM(balance) FROM loan_book GROUP BY customer_id",2026-03-06 14:17:15.862275,Success,Complete,611709,6.1957577198290945
+JOB_125,N009,N094,INSERT INTO Risk_Cube SELECT SUM(exposure) FROM Murex_Trades GROUP BY counterparty,2026-03-03 18:40:15.862275,Success,Complete,828541,3.3633746130347535
+JOB_126,N039,N068,"SELECT portfolio, SUM(liquidity) FROM treasury_positions GROUP BY portfolio",2026-03-06 01:23:15.862275,Timeout,Incomplete,934154,5.611295281871826
+JOB_127,N080,N048,INSERT INTO Risk_Cube SELECT SUM(exposure) FROM Murex_Trades GROUP BY counterparty,2026-03-05 04:04:15.862275,Failure,Complete,159080,8.802696861069379
+JOB_128,N029,N090,"INSERT INTO credit_exposure SELECT customer_id, SUM(balance) FROM loan_book GROUP BY customer_id",2026-03-05 05:52:15.862275,Timeout,Incomplete,16527,11.693601352367246
+JOB_129,N009,N063,INSERT INTO Risk_Cube SELECT SUM(exposure) FROM Murex_Trades GROUP BY counterparty,2026-03-01 07:38:15.862275,Timeout,Complete,913078,7.261823726590559
+JOB_130,N042,N025,"SELECT portfolio, SUM(liquidity) FROM treasury_positions GROUP BY portfolio",2026-03-01 10:25:15.862275,Failure,Incomplete,55193,12.54309874998008
+JOB_131,N038,N034,"INSERT INTO credit_exposure SELECT customer_id, SUM(balance) FROM loan_book GROUP BY customer_id",2026-03-04 07:54:15.862275,Success,Complete,617397,19.22658212012001
+JOB_132,N053,N054,"SELECT counterparty, SUM(var) FROM market_positions GROUP BY counterparty",2026-03-04 07:11:15.862275,Failure,Incomplete,518743,10.155837344285409
+JOB_133,N017,N092,"INSERT INTO credit_exposure SELECT customer_id, SUM(balance) FROM loan_book GROUP BY customer_id",2026-03-05 03:55:15.862275,Success,Complete,821284,10.524149824882763
+JOB_134,N007,N039,"INSERT INTO credit_exposure SELECT customer_id, SUM(balance) FROM loan_book GROUP BY customer_id",2026-03-03 02:20:15.862275,Success,Incomplete,920987,12.636791967694988
+JOB_135,N048,N034,"SELECT portfolio, SUM(liquidity) FROM treasury_positions GROUP BY portfolio",2026-03-02 04:45:15.862275,Timeout,Complete,492995,8.708199740269663
+JOB_136,N043,N015,INSERT INTO Risk_Cube SELECT SUM(exposure) FROM Murex_Trades GROUP BY counterparty,2026-03-04 17:44:15.862275,Success,Incomplete,513538,15.64762069023114
+JOB_137,N034,N007,"SELECT portfolio, SUM(liquidity) FROM treasury_positions GROUP BY portfolio",2026-03-04 05:47:15.862275,Timeout,Incomplete,52250,12.114229160679258
+JOB_138,N022,N034,"INSERT INTO credit_exposure SELECT customer_id, SUM(balance) FROM loan_book GROUP BY customer_id",2026-02-27 20:46:15.862275,Failure,Complete,847509,0.6357672427602773
+JOB_139,N018,N093,"INSERT INTO credit_exposure SELECT customer_id, SUM(balance) FROM loan_book GROUP BY customer_id",2026-02-28 02:29:15.862275,Failure,Complete,605487,19.42767478863489
+JOB_140,N081,N022,"INSERT INTO credit_exposure SELECT customer_id, SUM(balance) FROM loan_book GROUP BY customer_id",2026-02-27 20:41:15.862275,Success,Incomplete,191894,9.396559691694137
+JOB_141,N077,N078,INSERT INTO Risk_Cube SELECT SUM(exposure) FROM Murex_Trades GROUP BY counterparty,2026-03-03 06:16:15.862275,Failure,Incomplete,37061,16.156138745464037
+JOB_142,N041,N036,INSERT INTO Risk_Cube SELECT SUM(exposure) FROM Murex_Trades GROUP BY counterparty,2026-03-03 05:49:15.862275,Timeout,Incomplete,309823,13.077082510704063
+JOB_143,N020,N014,"SELECT counterparty, SUM(var) FROM market_positions GROUP BY counterparty",2026-03-05 02:54:15.862275,Timeout,Complete,432236,2.9930598153924284
+JOB_144,N096,N037,INSERT INTO Risk_Cube SELECT SUM(exposure) FROM Murex_Trades GROUP BY counterparty,2026-03-02 07:41:15.862275,Failure,Complete,13460,18.561923910336535
+JOB_145,N021,N079,"INSERT INTO credit_exposure SELECT customer_id, SUM(balance) FROM loan_book GROUP BY customer_id",2026-03-06 07:50:15.862275,Timeout,Complete,751457,14.004609246733116
+JOB_146,N023,N047,"SELECT counterparty, SUM(var) FROM market_positions GROUP BY counterparty",2026-03-03 23:37:15.862275,Success,Complete,687055,3.357881066352336
+JOB_147,N007,N035,"SELECT counterparty, SUM(var) FROM market_positions GROUP BY counterparty",2026-03-05 06:24:15.862275,Timeout,Complete,791427,3.0543005732657407
+JOB_148,N034,N075,"SELECT counterparty, SUM(var) FROM market_positions GROUP BY counterparty",2026-02-28 17:19:15.862275,Success,Complete,767550,5.70010601276062
+JOB_149,N034,N045,"SELECT portfolio, SUM(liquidity) FROM treasury_positions GROUP BY portfolio",2026-03-01 05:15:15.862275,Timeout,Complete,241863,7.915602687344879
